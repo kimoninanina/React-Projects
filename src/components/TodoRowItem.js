@@ -2,8 +2,7 @@ import React from "react";
 import { BsTrash } from "react-icons/bs"; // 使用 React-icons 删除图标
 
 function TodoRowItem(props) {
-  const handleDeleteClick = (event) => {
-    event.stopPropagation(); 
+  const handleDeleteClick = () => {
     props.deleteTodo(props.rowNumber);
   };
 
